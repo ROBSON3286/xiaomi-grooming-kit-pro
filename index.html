@@ -7700,40 +7700,41 @@
 </head>
 
 <body>
-    <script>
-    $(document).ready(function () {$('.slick-slider').each(function () {
-        var $slider =$(this);
-        var $container =$slider.parent(); 
+  <script>
+    $(document).ready(function () {
+      $('.slick-slider').each(function () {
+        var $slider = $(this);
+        var $container = $slider.parent();
         var slidesHtml = [];
         $slider.find('.slick-slide:not(.slick-cloned)').each(function () {
           slidesHtml.push($(this).html());
         });
-        $slider.removeClass('slick-initialized').empty();$.each(slidesHtml, function (index, html) {
+        $slider.removeClass('slick-initialized').empty(); $.each(slidesHtml, function (index, html) {
           $slider.append('<div>' + html + '</div>');
         });
-        var $leftBtn =$container.find('.left, .left-mob');
-        var $rightBtn =$container.find('.right, .right-mob');
-        var $centerBtn =$container.find('.center, .center-mob');
-        $leftBtn.show();$rightBtn.show();
-        $centerBtn.show();$slider.slick({
+        var $leftBtn = $container.find('.left, .left-mob');
+        var $rightBtn = $container.find('.right, .right-mob');
+        var $centerBtn = $container.find('.center, .center-mob');
+        $leftBtn.show(); $rightBtn.show();
+        $centerBtn.show(); $slider.slick({
           fade: true,
           infinite: true,
-          autoplay: true,         
-          autoplaySpeed: 3000,    
-          speed: 500,             
-          pauseOnHover: false,    
-          pauseOnFocus: false,    
+          autoplay: true,
+          autoplaySpeed: 3000,
+          speed: 500,
+          pauseOnHover: false,
+          pauseOnFocus: false,
           arrows: true,
           prevArrow: $leftBtn,
           nextArrow: $rightBtn,
-          dots: false 
+          dots: false
         });
         $centerBtn.off('click').on('click', function () {
-          var $btn =$(this);
+          var $btn = $(this);
           if ($btn.hasClass('playing')) {
-            $btn.removeClass('playing').addClass('paused');$slider.slick('slickPause');
+            $btn.removeClass('playing').addClass('paused'); $slider.slick('slickPause');
           } else {
-            $btn.removeClass('paused').addClass('playing');$slider.slick('slickPlay');
+            $btn.removeClass('paused').addClass('playing'); $slider.slick('slickPlay');
           }
         });
       });
@@ -7760,7 +7761,7 @@
 
         // Limpa os estilos inline de transform (translate) que estão engessando o HTML
         gsap.set(images, { clearProps: "transform" });
-        
+
         // Define o estado inicial: imagens 2 a 5 ficam transparentes e levemente rebaixadas
         gsap.set(images.slice(1), { y: 100, opacity: 0 });
         gsap.set(texts.slice(1), { opacity: 0 });
@@ -7847,9 +7848,8 @@
           </picture>
           <div class="div19"><span class="xm-text split_text416" data-id="j9n8d707li" data-key="ksp_2"
               data-type="text">Classificação IPX7</span></div>
-          <div class="div20"><span class="xm-text split_text417" data-id="n7qc21cqn0" data-key="ksp_3"
-              data-type="text">
-Totalmente lavável com água</span></div>
+          <div class="div20"><span class="xm-text split_text417" data-id="n7qc21cqn0" data-key="ksp_3" data-type="text">
+              Totalmente lavável com água</span></div>
         </div>
       </div>
       <div class="div21">
@@ -7862,7 +7862,7 @@ Totalmente lavável com água</span></div>
               src="https://i02.appmifile.com/mi-com-product/fly-birds/pc/xiaomi-grooming-kit-pro-global/8d1d9a586856703fb80094e2f39a91b9.png" />
           </picture>
           <div class="div24"><span class="xm-text split_text418" data-id="pwh3mjbvok" data-key="ksp_4"
-              data-type="text">Bateria de longa duração: 90 minutos de autonomia*</span></div>
+              data-type="text">Bateria de longa duração: <p></p>90 minutos de autonomia*</span></div>
         </div>
         <div class="div25">
           <picture class="xm-picture image26">
@@ -7919,12 +7919,12 @@ Totalmente lavável com água</span></div>
               src="https://i02.appmifile.com/mi-com-product/fly-birds/pc/xiaomi-grooming-kit-pro-global/0762089dda7b2e89f4251349ff5fca89.png" />
           </picture>
           <div class="div40"><span class="xm-text split_text410" data-id="cgk51b9tuk" data-key="ksp_9"
-              data-type="text">Design elegante Acabamento fosco</span></div>
+              data-type="text">Design elegante <p></p>Acabamento fosco</span></div>
         </div>
       </div>
     </div>
     <div class="multiple_kitPro_pin lazy pin-spacer" data-background-image="" data-id="w66zvhvfj4" data-loaded="true"
-      data-type="bg" role="" >
+      data-type="bg" role="">
       <div class="multiple-container" style="transform: translate(0px, 0px);">
         <div class="section div41 lazy" data-background-image="" data-id="dkhnsqxllo" data-loaded="true" data-type="bg"
           role="">
@@ -8204,7 +8204,7 @@ Totalmente lavável com água</span></div>
               src="https://i02.appmifile.com/mi-com-product/fly-birds/pc/xiaomi-grooming-kit-pro-global/3d765a43c8ebdf458e428dc761d1acbc.png" />
           </picture>
           <div class="div107"><span class="xm-text split_text438" data-id="ojseh2se5v" data-key="overview_30"
-              data-type="text">Design elegante Acabamento fosco</span></div>
+              data-type="text">Design elegante <p></p>Acabamento fosco</span></div>
           <div class="div108"><span class="xm-text split_text439" data-id="t8ggz5xtgk" data-key="overview_31"
               data-type="text">Design aprimorado e ergonômico para melhorar sua rotina de cuidados.</span></div>
         </div>
@@ -8311,9 +8311,9 @@ Totalmente lavável com água</span></div>
             src="https://i02.appmifile.com/mi-com-product/fly-birds/pc/xiaomi-grooming-kit-pro-global/83edb36923c92bf55b101277bb3f86cf.jpg" />
         </picture>
         <div class="div111-2"><a aria-label="" class="xm-link split_text4521" data-id="8wud7yrudh" data-type="button"
-            href="#" target="_self">Compre Agora</a><a
-            aria-hidden="true" aria-label="" class="xm-link split_text4521-bg" data-id="8wudftrudh" data-type="button"
-            href="#" tabindex="-1" target="_self"></a></div>
+            href="#" target="_self">Compre Agora</a><a aria-hidden="true" aria-label=""
+            class="xm-link split_text4521-bg" data-id="8wudftrudh" data-type="button" href="#" tabindex="-1"
+            target="_self"></a></div>
       </div>
     </div>
     <div class="section div138 lazy" data-background-image="" data-id="8opmcwdwkm" data-loaded="true" data-type="bg"
@@ -8329,7 +8329,9 @@ Totalmente lavável com água</span></div>
           depende de fatores como o modo de operação e o ambiente de uso e pode ser diferente dos resultados de
           laboratório.</span></div>
       <div class="div141"><span class="xm-text split_text457" data-id="j7k1g1kmu8" data-key="note_3" data-type="text">*
-          Até 10 minutos de uso com 5 minutos de carga: carregue o aparador por 5 minutos em temperatura ambiente de 25±2 °C para obter aproximadamente 10 minutos de funcionamento contínuo. A velocidade de carregamento pode variar conforme o uso do aparelho, as condições de carga e outros fatores.</span></div>
+          Até 10 minutos de uso com 5 minutos de carga: carregue o aparador por 5 minutos em temperatura ambiente de
+          25±2 °C para obter aproximadamente 10 minutos de funcionamento contínuo. A velocidade de carregamento pode
+          variar conforme o uso do aparelho, as condições de carga e outros fatores.</span></div>
       <div class="div142"><span class="xm-text split_text458" data-id="1fyv86msvs" data-key="note_4" data-type="text">*
           Salvo indicação em contrário, os dados desta página são provenientes do Lofans Labs</span></div>
     </div>
@@ -8356,7 +8358,7 @@ Totalmente lavável com água</span></div>
           data-type="text">Pro</span>
       </div>
       <div class="div10"><span class="xm-text split_text461" data-id="hhvry3x5iv" data-key="slogan_1"
-          data-type="text">Cuidado pessoal completo, em um só aparelho</span></div>
+          data-type="text">Cuidado pessoal completo, <p></p>em um só aparelho</span></div>
     </div>
     <div class="section div12 lazy" data-background-image="" data-id="dlvzuc61ah" data-loaded="true" data-type="bg"
       role="">
@@ -8454,7 +8456,7 @@ Totalmente lavável com água</span></div>
             src="https://i02.appmifile.com/mi-com-product/fly-birds/m/xiaomi-grooming-kit-pro-global/a5f385941b33d9730f9c7ab05e1c4df1.png" />
         </picture>
         <div class="div40"><span class="xm-text split_text464" data-id="sl241s6eep" data-key="ksp_9"
-            data-type="text">Design elegante Acabamento fosco</span></div>
+            data-type="text">Design elegante <p></p>Acabamento fosco</span></div>
       </div>
     </div>
     <div class="section div41 lazy" data-background-image="" data-id="v3zqmuyxil" data-loaded="true" data-type="bg"
@@ -8466,6 +8468,70 @@ Totalmente lavável com água</span></div>
       <div class="div43"><span class="xm-text split_text475" data-id="3wgof63t82" data-key="overview_2"
           data-type="text">Cuide do seu visual com acessórios que permitem aparar os pelos do corpo do seu jeito.</span>
       </div>
+      <script>
+        $(document).ready(function () {
+          $('.slick-slider').each(function () {
+            var $slider = $(this);
+            var $container = $slider.parent();
+            var slidesHtml = [];
+
+            $slider.find('.slick-slide:not(.slick-cloned)').each(function () {
+              slidesHtml.push($(this).html());
+            });
+
+            $slider.removeClass('slick-initialized').empty();
+
+            $.each(slidesHtml, function (index, html) {
+              $slider.append('<div>' + html + '</div>');
+            });
+
+            var $leftBtn = $container.find('.left, .left-mob');
+            var $rightBtn = $container.find('.right, .right-mob');
+            var $centerBtn = $container.find('.center, .center-mob');
+
+            $leftBtn.show();
+            $rightBtn.show();
+            $centerBtn.show();
+
+            // 1. Inicializa o Slick
+            $slider.slick({
+              fade: true,
+              infinite: true,
+              autoplay: true,
+              autoplaySpeed: 3000,
+              speed: 500,
+              pauseOnHover: false,
+              pauseOnFocus: false,
+              arrows: true,
+              prevArrow: $leftBtn,
+              nextArrow: $rightBtn,
+              dots: false
+            });
+
+            // 2. Evento para alterar os textos (Classe .active na .words)
+            $slider.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+              // Procura a div 'words' que está dentro da seção (div44)
+              var $words = $slider.closest('.div44').find('.words .J_words');
+              if ($words.length > 0) {
+                $words.removeClass('active'); // Remove de todos
+                $words.eq(nextSlide).addClass('active'); // Adiciona apenas no ativo
+              }
+            });
+
+            // 3. Controle Play/Pause
+            $centerBtn.off('click').on('click', function () {
+              var $btn = $(this);
+              if ($btn.hasClass('playing')) {
+                $btn.removeClass('playing').addClass('paused');
+                $slider.slick('slickPause');
+              } else {
+                $btn.removeClass('paused').addClass('playing');
+                $slider.slick('slickPlay');
+              }
+            });
+          });
+        });
+      </script>
       <div aria-label="xiaomi grooming kit pro grooming heads" aria-roledescription="carousel" class="div44"
         role="region">
         <div class="xm-scroll scroll-slider" data-id="xrg5saq5nz" data-type="scroll"
@@ -8551,7 +8617,7 @@ Totalmente lavável com água</span></div>
             </ul> -->
           </div>
         </div>
-        <!-- <div class="words">
+        <div class="words">
           <div class="J_words"><span class="xm-text split_text473" data-id="81bn1cmn5o" data-key="overview_3"
               data-type="text">Em formato de U</span></div>
           <div class="J_words active"><span class="xm-text split_text473" data-id="2qlhba883i" data-key="overview_4"
@@ -8562,7 +8628,7 @@ Totalmente lavável com água</span></div>
               data-type="text">Lâmina corporal para raspar os pelos do corpo</span></div>
           <div class="J_words"><span class="xm-text split_text473" data-id="h1zrxtf8g8" data-key="overview_7"
               data-type="text">Lâmina para aparar os pelos do nariz e das orelhas</span></div>
-        </div> -->
+        </div>
         <picture class="xm-picture image47">
           <source class="lazy"
             srcset="https://i02.appmifile.com/mi-com-product/fly-birds/pc/xiaomi-grooming-kit-pro-global/fd4f97995940889ded426420e6d8b213.png?f=webp"
@@ -8682,7 +8748,7 @@ Totalmente lavável com água</span></div>
       role="">
       <div class="div81">
         <div class="div82"><span class="xm-text split_text486" data-id="95d39e81ip" data-key="overview_18"
-            data-type="text">Classificação IPX7 Totalmente lavável com água</span></div>
+            data-type="text">Classificação IPX7 <p></p>Totalmente lavável com água</span></div>
         <div class="div83"><span class="xm-text split_text487" data-id="w6mug6pmor" data-key="overview_19"
             data-type="text">Mantenha o aparador sempre limpo com o corpo resistente à água e a cabeça de corte
             removível.</span></div>
@@ -8784,7 +8850,7 @@ Totalmente lavável com água</span></div>
       </div>
       <div class="div111">
         <div class="div112"><span class="xm-text split_text498" data-id="tyzms0iskc" data-key="overview_30"
-            data-type="text">Design elegante Acabamento fosco</span></div>
+            data-type="text">Design elegante <p></p>Acabamento fosco</span></div>
         <div class="div113"><span class="xm-text split_text499" data-id="48cdd4s8m7" data-key="overview_31"
             data-type="text">Design aprimorado e ergonômico para melhorar sua rotina de cuidados.</span></div>
         <picture class="xm-picture image114">
@@ -8902,7 +8968,9 @@ Totalmente lavável com água</span></div>
           depende de fatores como o modo de operação e o ambiente de uso e pode ser diferente dos resultados de
           laboratório.</span></div>
       <div class="div143"><span class="xm-text split_text511" data-id="u0oiszffyt" data-key="note_3" data-type="text">*
-          Até 10 minutos de uso com 5 minutos de carga: carregue o aparador por 5 minutos em temperatura ambiente de 25±2 °C para obter aproximadamente 10 minutos de funcionamento contínuo. A velocidade de carregamento pode variar conforme o uso do aparelho, as condições de carga e outros fatores.</span></div>
+          Até 10 minutos de uso com 5 minutos de carga: carregue o aparador por 5 minutos em temperatura ambiente de
+          25±2 °C para obter aproximadamente 10 minutos de funcionamento contínuo. A velocidade de carregamento pode
+          variar conforme o uso do aparelho, as condições de carga e outros fatores.</span></div>
       <div class="div144"><span class="xm-text split_text512" data-id="eok61lklba" data-key="note_4" data-type="text">*
           Salvo indicação em contrário, os dados desta página são provenientes do Lofans Labs</span></div>
     </div>
